@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="./styles.css" />  
+</head>
+<body>
+
+  <header id="header">
+    <img
+      id="header-img"
+      src="./images/logo.png"
+    />
+    <nav id="nav-bar">
+      <a  href="#hero" class="nav-link">Home</a>
+      <a href="#calculator"class="nav-link">Calculator</a>
+      <a href="#about" class="nav-link">About</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <p id="headline"> Calculate Your Risk and Lot Size in Seconds</p>
+    <p id="sub-headline">Avoid over leveraging with Swift Risk Management Fast, Reliable and Easy to Use</p>
+
+    <a href="#calculator" class="Button"> Get Started </a>
+    <div id="video">
+    </div>
+  </section>
+
+  <hr />
+
+  <section id="calculator">
+    <form id="form">
+      <div class="form-group">
+        <label for="currency-pair">Currency Pair:</label>
+        <select id="currency-pair" name="currency-pair" required>
+          <option value="">Select a currency</option>
+          <option value="eurusd">EUR/USD</option>
+          <option value="usdjpy">USD/JPY</option>
+          <option value="eurgbp">EUR/GBP</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="account-balance">Account-Balance:</label>
+        <input type="number" id="account-balance" name="account-balance" placeholder="e.g., 1000" step="0.01" required>
+      </div>
+
+      <div class="form-group">
+        <label for="risk-percentage">Risk-percent (%):</label>
+        <input type="number" id="risk-percentage" name="risk-percentage" placeholder="e.g., 1" step="0.01" required>
+      </div>
+
+      <div class="form-group">
+        <label for="stop-loss">Stop Loss (Pips):</label>
+        <input type="number" id="stop-loss" name="stop-loss" placeholder="e.g 50" required min="0">
+      </div>
+
+      <button type="submit" class="button">Calculate</button>
+    </form>
+  </section>
+
+</body>
+</html>
