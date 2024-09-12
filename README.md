@@ -23,4 +23,3 @@ Our goal is to address the challenges faces by new forex traders who often strug
 
 Start using Swift Risk Management today to take control of your forex trading risk with ease!
 
-We aim to solve the problem of new traders, over leveraging and choosing a higher lot size than they should.
