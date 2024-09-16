@@ -3,30 +3,46 @@ body {
     margin: 0 auto;
 }
 #header {
-    display: flex;
-    height: 2em;
-    align-items: center;
-    border-bottom: 2px solid black;
-    justify-content: space-between;
-    background-color: rgb(129, 90, 18)
+    text-align: center;
 }
-
-#nav-bar {
-    width: 25em;
-    display: flex;
-    justify-content: space-between;
+.quote {
+    text-align: center;
+    font-family: 'Georgia', serif; /* Nice serif font for quotes */
+    font-size: 1.5em;
+    font-style: italic;
+    color: #555;
+    background: #f9f9f9; /* Light background */
+    padding: 20px;
+    margin: 20px auto;
+    border-left: 10px solid #ccc; /* Left border for emphasis */
     position: relative;
-    right: 10%;
 }
 
-.nav-link {
-    font-size: 1.3rem;
-    color: rgb(215, 201, 201);
-    text-decoration: none;
+.quote::before{
+    content: "“"; /* Custom opening quote mark */
+    font-size: 2em;
+    color: #999;
+    position: absolute;
+    top: -10px;
+    left: 10px;   
 }
-.nav-link:hover{
-    text-decoration: none;
-    color: white;
+.quote::after {
+    content: "”"; /* Custom closing quote mark */
+    font-size: 3em;
+    color: #999;
+    position: absolute;
+    bottom: -10px;
+    right: 10px;  
 }
-
-
+cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: right;
+    color: #333;
+  }
+#hero {
+    background-image: url("../images/hero.webp");
+    background-size: auto;
+    height: 40vh;
+}
